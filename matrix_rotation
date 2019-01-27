@@ -1,0 +1,28 @@
+#include <stdio.h>
+
+int main(){
+  int arr1[3][3]={{1,2,3},{4,5,6},{7,8,9}};
+  int i,j=2,k,arr2[3][3];
+
+   for (i=0;i<3;i++){
+       for(k=0;k<3;k++){
+        arr2[k][j]=arr1[i][k];
+     }
+     j--;
+    }
+
+    int x,y;
+    printf("Matrix Rotation 90 Degree \n");    
+    for(x=0;x<3;x++){
+      for(y=0;y<3;y++){
+        printf("%d ",arr1[x][y]);
+      }
+      printf(" -->  ");
+      int z;
+      for(z=0;z<3;z++){
+        printf("%d ",arr2[x][z]);
+      }
+      printf("\n");
+    }
+    return 0;
+}
